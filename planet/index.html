@@ -45,6 +45,17 @@
              navbar.classList.add("lighten-1");
            }
          });
+
+        
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        
       </script>
     </head>
     <body>
@@ -196,6 +207,7 @@
                             id="view-more-chips"></a>
                     </div>
                 </div>
+
                 <div class="container">
                     <div class="divider"></div>
                     <div class="section">
@@ -277,6 +289,8 @@
                     </div>
                 </div>
             </div>
+            <button id="backToTopBtn" class="light-green lighten-1" onclick="scrollToTop()">Back to Top</button>
+
             <div id="projectviewer" class="modal modal-fixed-footer">
                 <div class="modal-content">
                     <a class="modal-close close-button"><i
@@ -385,6 +399,7 @@
                             </div>
                         </div>
                     </div>
+
                     <a href="#!" class="modal-action waves-effect waves-green
                         btn-flat project-icon tooltipped" data-position="bottom"
                         data-delay="50" id="projectviewer-download-file"><i
